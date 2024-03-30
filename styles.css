@@ -11,11 +11,12 @@
   *,
   *::before,
   *::after {
-    line-height: 1.5 !important;
+    line-height: 1.5;
   }
 
   body {
     font-family: "Hanken Grotesk";
     font-size: 18px;
+    font-weight: 500;
   }
 }

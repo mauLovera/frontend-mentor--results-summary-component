@@ -11,14 +11,21 @@ module.exports = {
       "pale-blue": "hsl(221, 100%, 96%)",
       "light-lavender": "hsl(241, 100%, 89%)",
       "dark-gray-blue": "hsl(224, 30%, 27%)",
-      "light-slate-blue": "hsl(252, 100%, 67%)",
-      "light-royal-blue": "hsl(241, 81%, 54%)",
-      "violet-blue": "hsla(256, 72%, 46%, 1)",
-      "persian-blue": "hsla(241, 72%, 46%, 0)",
     },
     screens: {
       mobile: "730px",
     },
+    gradientColorStops: {
+      "light-slate-blue": "hsl(252, 100%, 67%)",
+      "light-royal-blue": "hsl(241, 81%, 54%)",
+      "violet-blue": "hsla(256, 72%, 46%, 1)",
+      "persian-blue": "hsla(241, 72%, 46%, 1)",
+    },
+    extend: {
+      borderRadius: {
+        "container": "36px"
+      },
+    }
   },
   plugins: [],
 };
