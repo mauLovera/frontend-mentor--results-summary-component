@@ -565,6 +565,36 @@ body {
   --tw-contain-style:  ;
 }
 
+.flex {
+  display: flex;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-light-red {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 100% 67% / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+}
+
 @font-face {
   font-family: "Hanken Grotesk";
 
