@@ -583,6 +583,10 @@ body {
   margin-top: 1rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -617,10 +621,6 @@ body {
 
 .items-center {
   align-items: center;
-}
-
-.justify-normal {
-  justify-content: normal;
 }
 
 .justify-center {
@@ -661,20 +661,20 @@ body {
   background-color: hsl(234 85% 45% / var(--tw-bg-opacity));
 }
 
-.bg-cobalt-blue\/15 {
-  background-color: hsl(234 85% 45% / 0.15);
+.bg-cobalt-blue\/10 {
+  background-color: hsl(234 85% 45% / 0.1);
 }
 
-.bg-green-teal\/15 {
-  background-color: hsl(166 100% 37% / 0.15);
+.bg-green-teal\/10 {
+  background-color: hsl(166 100% 37% / 0.1);
 }
 
-.bg-light-red\/15 {
-  background-color: hsl(0 100% 67% / 0.15);
+.bg-light-red\/10 {
+  background-color: hsl(0 100% 67% / 0.1);
 }
 
-.bg-orangey-yellow\/15 {
-  background-color: hsl(39 100% 56% / 0.15);
+.bg-orangey-yellow\/10 {
+  background-color: hsl(39 100% 56% / 0.1);
 }
 
 .bg-white {
@@ -689,6 +689,16 @@ body {
 
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.from-dark-gray-blue {
+  --tw-gradient-from: hsl(224, 30%, 27%) var(--tw-gradient-from-position);
+  --tw-gradient-to: hsl(224 30% 27% / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-light-slate-blue\/90 {
@@ -716,20 +726,20 @@ body {
   --tw-gradient-to: hsla(241, 72%, 46%, 0.9) var(--tw-gradient-to-position);
 }
 
+.to-dark-gray-blue {
+  --tw-gradient-to: hsl(224, 30%, 27%) var(--tw-gradient-to-position);
+}
+
 .to-100\% {
   --tw-gradient-to-position: 100%;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
-}
-
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-\[42px\] {
@@ -745,11 +755,6 @@ body {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .pb-14 {
@@ -783,6 +788,11 @@ body {
 
 .text-\[72px\] {
   font-size: 72px;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -837,20 +847,35 @@ body {
   color: hsl(0 100% 67% / var(--tw-text-opacity));
 }
 
+.text-orangey-yellow {
+  --tw-text-opacity: 1;
+  color: hsl(39 100% 56% / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
-.text-orangey-yellow {
+.text-cobalt-blue {
   --tw-text-opacity: 1;
-  color: hsl(39 100% 56% / var(--tw-text-opacity));
+  color: hsl(234 85% 45% / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .transition {
@@ -867,12 +892,6 @@ body {
   transition-duration: 150ms;
 }
 
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 @font-face {
   font-family: "Hanken Grotesk";
 
@@ -883,17 +902,34 @@ body {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
-.hover\:bg-gradient-to-b:hover {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+.hover\:from-light-slate-blue\/90:hover {
+  --tw-gradient-from: hsl(252 100% 67% / 0.9) var(--tw-gradient-from-position);
+  --tw-gradient-to: hsl(252 100% 67% / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.hover\:to-persian-blue\/90:hover {
+  --tw-gradient-to: hsla(241, 72%, 46%, 0.9) var(--tw-gradient-to-position);
+}
+
+.hover\:text-dark-gray-blue:hover {
+  --tw-text-opacity: 1;
+  color: hsl(224 30% 27% / var(--tw-text-opacity));
+}
+
+.hover\:text-light-red:hover {
+  --tw-text-opacity: 1;
+  color: hsl(0 100% 67% / var(--tw-text-opacity));
+}
+
+.hover\:text-green-teal:hover {
+  --tw-text-opacity: 1;
+  color: hsl(166 100% 37% / var(--tw-text-opacity));
 }
 
 @media (min-width: 730px) {
   .mobile\:flex-row {
     flex-direction: row;
-  }
-
-  .mobile\:flex-col {
-    flex-direction: column;
   }
 
   .mobile\:rounded-container {

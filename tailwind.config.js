@@ -20,6 +20,7 @@ module.exports = {
       "light-royal-blue": "hsl(241, 81%, 54%)",
       "violet-blue": "hsla(256, 72%, 46%, 1)",
       "persian-blue": "hsla(241, 72%, 46%, 1)",
+      "dark-gray-blue": "hsl(224, 30%, 27%)",
     },
     extend: {
       borderRadius: {
